@@ -7,7 +7,7 @@ const path = require('path');
 
 //set
 
-const PORT = 5000;
+const PORT = 50;
 //middles
 app.use(express.json());
 
@@ -74,11 +74,11 @@ app.post('/reserva', (req, res) => {
     }
 });
 // server run
-/*
+
 app.listen(PORT, (req,res)=> {
         console.log("Aqui funcionando de mala gana en el puerto:",PORT);
-})*/
- const sslServer = https.createServer(
+})
+ /*const sslServer = https.createServer(
   {
     key: fs.readFileSync(path.join(__dirname,'cert','key.pem')),
     cert: fs.readFileSync(path.join(__dirname,'cert','cert.pem'))
@@ -89,4 +89,4 @@ app.listen(PORT, (req,res)=> {
  
  sslServer.listen(PORT,(req,res)=> {
     console.log("Aqui funcionando de mala gana en el puerto:",PORT);
-    })
+    })*/
