@@ -7,7 +7,7 @@ const path = require('path');
 
 //set
 
-const PORT = 50;
+const PORT = 5000;
 //middles
 app.use(express.json());
 
