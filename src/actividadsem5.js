@@ -14,7 +14,7 @@ app.use(express.json());
 //routes
 app.get('/',(req,res) =>{
   res.send(
-      "AH, ....."
+      "Certificado SSL/TLS valido =)"
   )
 });
 
