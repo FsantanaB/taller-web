@@ -1,15 +1,18 @@
 
 const express = require('express');
 const app = express();
+const morga = require('morgan');
 const https = require('https');
 const fs = require('fs');
 const path = require('path');
+const morgan = require('morgan');
 
 //set
 
 const PORT = 5000;
 //middles
 app.use(express.json());
+app.use(morgan('dev'));
 
 //routes
 app.get('/',(req,res) =>{
