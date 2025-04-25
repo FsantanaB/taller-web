@@ -1,7 +1,6 @@
 
 const express = require('express');
 const app = express();
-const morga = require('morgan');
 const https = require('https');
 const fs = require('fs');
 const path = require('path');
@@ -81,15 +80,3 @@ app.post('/reserva', (req, res) => {
 app.listen(PORT, (req,res)=> {
         console.log("Aqui funcionando de mala gana en el puerto:",PORT);
 })
- /*const sslServer = https.createServer(
-  {
-    key: fs.readFileSync(path.join(__dirname,'cert','key.pem')),
-    cert: fs.readFileSync(path.join(__dirname,'cert','cert.pem'))
-  },
-  app
- );
-
- 
- sslServer.listen(PORT,(req,res)=> {
-    console.log("Aqui funcionando de mala gana en el puerto:",PORT);
-    })*/
